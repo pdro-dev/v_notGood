@@ -31,9 +31,15 @@
 
 // get display element and set to 0
 let display = document.getElementById("display");
-display.innerText = "Mesa 4 : Hello World";
+
+setTimeout(() => {
+    display.style.fontSize = '15px';
+    display.innerText = "Mesa 4 : Hello World" + "\n" + "Matheus Galvão, Maurício Correa, Pedro Simões, Renata Carmi Almel, Tomas Ott";
+}, 300);
+
 setTimeout(() => {
     display.innerText = "0";
+    display.style.fontSize = '50px';
 }, 3000); // show 'hello world' in display for 3 seconds and then set to 0
 
 
